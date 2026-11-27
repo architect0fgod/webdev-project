@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>WEB DEV PROJECT - SCHOOLAR DIARY</title>
+    <title>WEB DEV PROJECT - SCHOLAR DIARY</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,12 +12,12 @@
         <button type="button" id="hamburger" class="hamburger">
             ≡
         </button>
-       <ul id="navMenu" class="nav-menu">
-         <li><a href="index.html">Home</a></li> 
-        <li><a href="calendar.html">Calendar</a></li>
-        <li><a href="diary.html">Diary</a></li>
-        <li><a href="about.html">About Us</a></li>
-        </ul> 
+        <ul id="navMenu" class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="diary.html">Diary</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
 
         <div class="nav-name">
             <a href="index.html">Pippo The Diary</a>
@@ -26,12 +27,28 @@
             <a href="about.html">DocktypeHtml</a>
 
         </div>
-      </header>
-          <div class="container">
-           <div class="left">
-             left 
-            </div> 
-                        <div class="lofi-player">
+    </header>
+    <div class="container">
+        <div class="left">
+            <!-- Pomodoro timer -->
+            <div class="timer">
+                <h1 id="label">Work</h1>
+                <div id="time">25:00</div>
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+            </div>
+            <audio id="bell_ring">
+                <source src="media/bell_ring.mp3" type="audio/mpeg">
+            </audio>
+            <div class="bar">
+                <input type="number" id="work_time_setter" value="25">
+                <input type="number" id="break_time_setter" value="5">
+                <button id="set_new_time">Set time</button>
+            </div>
+
+        </div>
+        <div class="lofi-player">
 
             <h3>♫ Lo-fi Corner</h3>
 
@@ -52,9 +69,10 @@
 
         </div>
 
-          </div>
+    </div>
     <script src="script.js">
-      
+
     </script>
 </body>
+
 </html>
