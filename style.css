@@ -321,3 +321,144 @@ button {
 .bar button:hover {
     background-color: #ff9ac6;
 }
+
+/* Calendar page styles */
+
+.calendar-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 20px;
+    gap: 20px;
+    background-color: #16101f;
+}
+
+/* LEFT COLUMN: split into top (calendar) and bottom (closest tasks) */
+.left-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 20px;
+}
+
+.top-cal {
+    flex: 2;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bottom-cal {
+    flex: 1;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* RIGHT COLUMN: one big panel for day details */
+.right-col {
+    flex: 1;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Day grid */
+.day-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.day-cell {
+    background-color: #2a1e33;
+    padding: 12px 8px;
+    border-radius: 8px;
+    border: 1px solid #3a2a45;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #e8e0ea;
+}
+
+.day-cell:hover {
+    background-color: #352845;
+}
+
+.day-cell.empty {
+    cursor: default;
+    background: transparent;
+    border: none;
+}
+
+.day-cell.selected {
+    background-color: #F17CB5;
+    color: #1d1424;
+    font-weight: bold;
+}
+
+/* Diary page styles */
+.left-diary {
+    flex: 0 0 250px;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+    overflow-y: auto;
+}
+
+.right-diary {
+    flex: 1;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+}
+
+/* Diary page styles */
+.left-diary {
+    flex: 0 0 250px;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+    overflow-y: auto;
+}
+.right-diary {
+    flex: 1;
+    min-width: 0;
+    background-color: #201626;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2d2036;
+}

@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <link rel="stylesheet" type="" href="style.css"> 
+    <link rel="stylesheet" type="" href="style.css">
   </head>
   <body>
-      
     <header class="navbar">
-
-        <button type="button" id="hamburger" class="hamburger">
-            ≡
-        </button>
-       <ul id="navMenu" class="nav-menu">
-         <li><a href="index.html">Home</a></li> 
+      <button type="button" id="hamburger" class="hamburger">
+        ≡
+      </button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="diary.html">Diary</a></li>
         <li><a href="about.html">About Us</a></li>
-        </ul> 
-
-        <div class="nav-name">
-            <a href="index.html">Pippo The Diary</a>
-        </div>
-
-        <div class="nav-team">
-            <a href="about.html">DocktypeHtml</a>
-
-        </div>
-      </header>
-      <div class="left-calendar">
+      </ul>
+      <div class="nav-name">
+        <a href="index.html">Pippo The Diary</a>
+      </div>
+      <div class="nav-team">
+        <a href="about.html">DocktypeHtml</a>
+      </div>
+    </header>
+    <div class="calendar-wrapper">
+      <!-- LEFT COLUMN: top calendar + bottom closest tasks -->
+      <div class="left-col">
         <div class="top-cal">
-          
+          <h2>Calendar</h2>
+          <div id="monthYear"></div>
+          <div id="calendarDays" class="day-grid"></div>
         </div>
-      <div class="bottom-cal">
-        
+        <div class="bottom-cal">
+          <h2>Closest Tasks</h2>
+          <ul id="closestTasksList"></ul>
+        </div>
       </div>
-        
+      <!-- RIGHT COLUMN: one big panel for day details -->
+      <div class="right-col">
+        <h2>Day Details</h2>
+        <p id="selectedDay">Select a day</p>
+        <textarea id="taskInput" placeholder="Add a task for this day..."></textarea>
+        <button id="saveTaskBtn">Save Task for Day</button>
       </div>
-      <div class="right-calendar">
-        
-      </div>
+    </div>
 
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
+    <script src="calendar.js"></script>
   </body>
 </html>
