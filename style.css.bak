@@ -1,0 +1,297 @@
+
+/* GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f3f1f5;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #FF69B4;
+    min-height: 80px;
+}
+
+.hamburger {
+    justify-self: start;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 8px;
+    color: #4B164C;
+}
+
+.nav-name {
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-team {
+    justify-self: end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-name a,
+.nav-team a {
+    color: #4B164C;
+    text-decoration: none;
+}
+
+.nav-name a:hover,
+.nav-team a:hover {
+    color: #A64D79;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    padding: 20px;
+    gap: 20px;
+
+    background-color: #F7CAC9;
+}
+
+
+/* LEFT SECTION - 70% */
+
+.left {
+    flex: 7;
+    min-width: 0;
+
+    background-color: white;
+    padding: 24px;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* RIGHT SECTION - 30% (LOFI PLAYER) */
+
+.lofi-player {
+    flex: 3;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+    padding: 24px;
+
+    background: linear-gradient(145deg, #35233F, #211B2B);
+    color: white;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.lofi-player:hover {
+    transform: scale(1.025);
+}
+
+
+/* ALBUM IMAGE */
+
+.lofi-player img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+/* SONG DETAILS */
+
+.lofi-player h3 {
+    color: #F17CB5;
+}
+
+.lofi-player h2 {
+    font-size: 22px;
+}
+
+.lofi-player p {
+    color: #BDB0C8;
+    font-size: 13px;
+}
+
+
+/* PLAY BUTTON */
+
+.lofi-player button {
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #F17CB5;
+    color: #282033;
+
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.lofi-player button:hover {
+    transform: scale(1.08);
+}
+
+.lofi-player .repeat-text {
+    color: #F17CB5;
+}
+
+
+/* MEMORY PAGE STYLES */
+
+.right {
+    flex: 3;
+    min-width: 0;
+
+    display: flex;
+    background-color: white;
+    padding: 24px;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+
+    gap: 20px;
+}
+
+.mem1, .mem2, .mem3 {
+    background-color: #F7F7F7;
+    padding: 20px;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    min-height: 0;
+}
+
+.mem1 {
+    flex: 4;
+}
+
+.mem2 {
+    flex: 3;
+}
+
+.mem3 {
+    flex: 3;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #FF69B4;
+    position: relative;
+}
+
+/* HAMBURGER BUTTON */
+
+.hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4B164C;
+}
+
+/* WEBSITE NAME */
+
+.nav-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* TEAM NAME */
+
+.nav-team {
+    font-size: 18px;
+}
+
+/* LINKS */
+
+.nav-name a,
+.nav-team a {
+    color: #4B164C;
+    text-decoration: none;
+}
+
+/* HIDDEN MENU */
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FF69B4;
+    list-style: none;
+    padding: 15px;
+}
+
+/* VISIBLE MENU */
+
+.nav-menu.active {
+    display: block;
+}
+
+/* MENU LINKS */
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu a {
+    color: #4B164C;
+    text-decoration: none;
+}

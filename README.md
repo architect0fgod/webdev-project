@@ -1,1 +1,3 @@
-This is our simple mini web dev project Pippo the diary that has been built using html, css and javascript
+# PippoTheDiary
+
+## welcome to our custom todolist app made purely using vanilla javascript and html
